@@ -1,0 +1,30 @@
+<form nz-form [formGroup]="itemForm" (ngSubmit)="onSubmit()">
+    <nz-form-item>
+      <nz-form-label [nzSpan]="6" nzRequired>Name</nz-form-label>
+      <nz-form-control [nzSpan]="14" nzErrorTip="Please input your name!">
+        <input nz-input formControlName="name" />
+      </nz-form-control>
+    </nz-form-item>
+  
+    <nz-form-item>
+      <nz-form-label [nzSpan]="6" nzRequired>Email</nz-form-label>
+      <nz-form-control [nzSpan]="14" nzErrorTip="Please input a valid email!">
+        <input nz-input formControlName="email" />
+      </nz-form-control>
+    </nz-form-item>
+  
+    <nz-form-item>
+      <nz-form-label [nzSpan]="6" nzRequired>Age</nz-form-label>
+      <nz-form-control [nzSpan]="14" nzErrorTip="Please input your age!">
+        <input nz-input formControlName="age" type="number" />
+      </nz-form-control>
+    </nz-form-item>
+  
+    <nz-form-item>
+      <nz-form-label [nzSpan]="6" nzRequired>Address</nz-form-label>
+      <nz-form-control [nzSpan]="14" nzErrorTip="Please input your address!">
+        <input nz-input formControlName="address" />
+      </nz-form-control>
+    </nz-form-item>
+  </form>
+  
